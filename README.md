@@ -5,4 +5,4 @@
 •	After face recognition snapchat filter(moustache) is applied using the alpha values.  
 
 
-
+![](/Face%20Recognition%20&%20Applying%20Snapchat%20filters/output_screenshot.png)
