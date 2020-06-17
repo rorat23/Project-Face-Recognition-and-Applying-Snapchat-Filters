@@ -91,6 +91,7 @@ mustache = cv2.imread('mustache.png',-1)
 
 
 while True:
+	/*capturing frame*/
 	ret,frame = capture.read()
 
 	if ret == False:
