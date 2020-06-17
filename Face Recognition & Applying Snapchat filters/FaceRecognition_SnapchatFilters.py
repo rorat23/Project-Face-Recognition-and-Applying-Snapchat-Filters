@@ -91,7 +91,7 @@ mustache = cv2.imread('mustache.png',-1)
 
 
 while True:
-	/*capturing frame*/
+	#capturing frame
 	ret,frame = capture.read()
 
 	if ret == False:
@@ -99,8 +99,10 @@ while True:
 
 	gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2BGRA)
+	# capturing all faces in the frame
 	faces = face_cascade.detectMultiScale(frame, 1.4, 5)
 
+	# iterating over all the faces
 	for face in faces:
 		x,y,w,h = face
 		cv2.rectangle(frame, (x,y), (x+w,y+h), (0,0,255), 2)
